@@ -1,0 +1,26 @@
+content:
+  - name: articles
+    label: 网站文章
+    type: collection
+    path: content
+    format: yaml-frontmatter
+    subfolders: true
+    fields:
+      - name: title
+        label: 标题
+        type: string
+        required: true
+      - name: description
+        label: 简介
+        type: text
+      - name: tags
+        label: 标签
+        type: string
+        list: true
+      - name: cssclasses
+        label: 页面样式
+        type: string
+        list: true
+      - name: body
+        label: 正文
+        type: rich-text
